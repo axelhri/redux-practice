@@ -1,6 +1,7 @@
 import { useCallback, useState } from 'react';
 import { useLogin } from '../features/auth/useAuth.ts';
 import * as React from 'react';
+import loginSchema from '../schemas/LoginSchema.ts';
 
 export const Login = () => {
   const [formData, setFormData] = useState({
@@ -16,6 +17,7 @@ export const Login = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    loginSchema.safeParse(formData);
     if (!email || !password) return;
     login({ email, password });
   };
