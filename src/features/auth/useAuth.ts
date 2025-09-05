@@ -11,7 +11,7 @@ export const useLogin = () => {
       login(credentials),
     onSuccess: (data) => {
       dispatch(setCredentials({ token: data.token }));
-      console.log('You are now logged in');
+      console.log('You are now logged in', data);
     },
     onError: (error) => {
       console.error('Authentication failed', error);
