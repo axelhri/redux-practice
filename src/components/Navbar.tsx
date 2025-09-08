@@ -13,6 +13,10 @@ export const Navbar = () => {
       <div>
         <Link to={'/login-rhf'}>Login (react-hook-form)</Link>
       </div>
+
+      <div>
+        <Link to={'/user'}>User info</Link>
+      </div>
     </nav>
   );
 };
