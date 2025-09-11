@@ -7,8 +7,10 @@ import { ReactHookFormLogin } from './components/ReactHookFormLogin.tsx';
 import { UserInfo } from './components/UserInfo.tsx';
 import { MeLogin } from './components/MeLogin.tsx';
 import { MeInfo } from './components/MeInfo.tsx';
+import { useMe } from './hooks/useMe.ts';
 
 function App() {
+  useMe();
   return (
     <BrowserRouter>
       <Navbar />
