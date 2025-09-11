@@ -5,6 +5,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Navbar } from './components/Navbar.tsx';
 import { ReactHookFormLogin } from './components/ReactHookFormLogin.tsx';
 import { UserInfo } from './components/UserInfo.tsx';
+import { MeLogin } from './components/MeLogin.tsx';
+import { MeInfo } from './components/MeInfo.tsx';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path={'/user'} element={<UserInfo />} />
         <Route path={'/login'} element={<Login />} />
         <Route path={'/login-rhf'} element={<ReactHookFormLogin />} />
+        <Route path={'/me-login'} element={<MeLogin />} />
+        <Route path={'/me-info'} element={<MeInfo />} />
       </Routes>
     </BrowserRouter>
   );

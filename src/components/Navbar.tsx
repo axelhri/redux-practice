@@ -17,6 +17,14 @@ export const Navbar = () => {
       <div>
         <Link to={'/user'}>User info</Link>
       </div>
+
+      <div>
+        <Link to={'/me-login'}>Me Login</Link>
+      </div>
+
+      <div>
+        <Link to={'/me-info'}>Me Info</Link>
+      </div>
     </nav>
   );
 };
